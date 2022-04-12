@@ -1,28 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Weather Dashboard</title>
 </head>
+
 <body>
-    <header>
+    <header class="navbar container-fluid">
+            <h1 class="text-center">Weather Dashboard</h1>        
     </header>
-    <div>
-    <input type="text" value="" id="cityInput">
-    <button id="searchForm">
-        Search
-    </button>
-    </div>
-    <div>
-        
-    </div>
- 
+
+    <main class="container-fluid">
+        <side class="col-lg-3 form-group">
+            <section class="row search">
+                <div>
+                    <h2 class="">Search for a city:</h2>
+                    <input class="input-lg form-group" type="text" value="" id="cityInput">
+                    <button class="btn-info btn-lg btn-block" id="searchForm">
+                            Search
+                    </button>
+                </div>
+            </section>
+            <div class="row">
+                <ul class="list-group" id="prevCity">
+                    <li></li>
+                </ul>
+                
+
+            </div>
+
+
+        </side>
+
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="well"></div>
+            </div>
+            <div class="row">
+            </div>
+
+        </div>
+    </main>
+
+
 
 
 
     <script src="./script.js"></script>
 </body>
+
 </html>

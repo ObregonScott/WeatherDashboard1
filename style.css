@@ -1,0 +1,32 @@
+:root {
+    --primary-color: rgb(173, 173, 173);
+    --secondary-color: #00a0d1;
+    --tertiary-color: #0ddcf3;
+  }
+
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font: black;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Header start*/
+header {
+    padding: 20px 35px;
+    background-image: linear-gradient(to right, #0ddcf3,#00a0d1, #005bd1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+}
