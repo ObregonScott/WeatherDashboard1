@@ -7,6 +7,8 @@ var tempEl = document.createElement('p')
 var windEl = document.createElement('p')
 var humidityEl = document.createElement("p")
 var cityName = document.createElement("p")
+var uviEl = document.createElement("p")
+
 searchForm.addEventListener("click", function () {
     console.log("hit")
     var cityInput = document.querySelector("#cityInput").value
@@ -40,7 +42,11 @@ searchForm.addEventListener("click", function () {
                     
                     humidityEl.textContent = "Humidity: " + data.current.humidity + " %";
                     humidityEl.className = "list-group-item";
-                    currentDay.append(cityName, tempEl, windEl, humidityEl)
+
+                    uviEl.textContent = "UV Index: " + data.current.uvi;
+                    uviEl.className = "list-group-item";
+
+                    currentDay.append(tempEl, windEl, humidityEl, uviEl)
                 })
 
         }
