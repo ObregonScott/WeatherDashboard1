@@ -30,3 +30,9 @@ header h1 {
     margin: 0;
     font-size: 36px;
 }
+
+#futureForecast {
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
