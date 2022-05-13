@@ -96,11 +96,17 @@ function futureForecast(futureArray) {
 
         var futureDate = document.createElement('p');
         futureDate.textContent = moment().add(i,"days").format("M/D/YY");
+
+        var futureTemp = document.createElement('p');
+        futureTemp.textContent = "Temp: " + futureArray[i].temp + " °F";
        
+        var futureWind = document.createElement('p');
+        futureWind.textContent = "Wind: " + futureArray[i].wind_speed + " MPH";
+
         var humidEl = document.createElement('p')
         humidEl.textContent = "Humidity: " + futureArray[i].humidity + " %";
         
-        cardEl.append(futureDate, humidEl);
+        cardEl.append(futureDate, futureTemp, futureWind, humidEl);
 
         futureForecastEl.appendChild(cardEl);
     }   
