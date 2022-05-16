@@ -13,8 +13,8 @@ var futureForecastEl = document.querySelector("#futureForecast");
 
 searchForm.addEventListener("click", function () {
     console.log("hit")
-    var cityInput = document.querySelector("#cityInput").value
-    var query = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&limit=1&appid=" + apiKey
+    var cityInput = document.querySelector("#cityInput").value;
+    var query = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityInput + "&limit=1&appid=" + apiKey;
     fetch(query)
         .then(res => {
             return res.json()
